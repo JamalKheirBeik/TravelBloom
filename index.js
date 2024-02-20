@@ -8,7 +8,7 @@ searchForm.addEventListener("submit", (e) => {
 });
 
 function getRecommendations() {
-  fetch("./travel_recommendation.json")
+  fetch("./data.json")
     .then((response) => {
       return response.json();
     })
