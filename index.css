@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.black-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+nav h1 {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid white;
+}
+
+nav form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav form input,
+nav form button,
+.container .content button {
+  font-size: 16px;
+  border: none;
+}
+
+nav form input {
+  width: 300px;
+  outline: none;
+  color: teal;
+}
+
+nav form input::placeholder {
+  color: teal;
+}
+
+nav form i {
+  font-size: 24px;
+  color: teal;
+}
+
+nav form button,
+.container .content button {
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+nav form button:hover,
+.container .content button:hover {
+  background-color: rgb(0, 147, 147);
+}
+
+.container {
+  min-height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.container .socials {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+  list-style: none;
+}
+
+.container .socials li a {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.container .socials li a:hover {
+  color: teal;
+}
+
+.container .content,
+.container .about-us,
+.container .contact,
+.container .home {
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 50px;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container .about-us,
+.container .contact,
+.container .home {
+  padding-top: 150px;
+}
+
+.container .contact,
+.container .home {
+  flex-direction: row;
+}
+
+.container .about-us {
+  display: block;
+}
+
+.container .content h1 {
+  font-size: 70px;
+  width: min-content;
+}
+
+.container .content p {
+  font-size: 20px;
+  width: 300px;
+}
+
+.container .content button {
+  width: 150px;
+}
+
+.container .about-us h1,
+.container .contact h1 {
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+
+.container .about-us p,
+.container .contact p {
+  font-size: 20px;
+}
+
+.container .team {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.container .team h1 {
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-right: 50px;
+}
+
+.container .team div {
+  margin-right: 20px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.container .team h3 {
+  font-size: 18px;
+}
+
+.container .team p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.container .team .role {
+  background-color: darkblue;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  height: fit-content;
+}
+
+.contact form input,
+.contact form button,
+.contact form textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.contact form textarea {
+  height: 200px;
+}
+
+.contact form button {
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+.recommendation,
+.recommendation .cards,
+.recommendation .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recommendation {
+  width: 800px;
+  overflow-y: auto;
+}
+
+.recommendation .timezone {
+  background-color: teal;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.recommendation .timezone.hidden {
+  visibility: hidden;
+}
+
+.recommendation .cards .card {
+  background-color: white;
+  color: black;
+  text-shadow: none;
+  padding: 20px;
+}
+
+.recommendation .cards .card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-color: gray;
+}
+
+.recommendation .cards .card button {
+  background-color: teal;
+  color: white;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
